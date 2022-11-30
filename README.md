@@ -13,3 +13,8 @@ Backend Code- Python
 Integrate - API (Python Flask API)
 
 Database: MySQL
+
+Participants:
+DEVIKA BOLLUR THIRUMALESHWARA (10620954)
+
+PRADEEP NAGENDRA URALA (10609115)
