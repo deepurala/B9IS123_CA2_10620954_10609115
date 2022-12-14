@@ -20,7 +20,24 @@
             <div class = "row">
                 <div class = "col md-12">
                     <h2>Product List <button type = "button" class="btn btn-success pull-right" data-toggle="modal" data-target="#myModal"> Add Product Data </button></h2>
-                    
+                    {% with messages = get_flashed_messages() %}
+
+                     {% if messages %}
+
+                     {% for message in messages %}
+
+                     <div class = "alert alert-success alert-dismissable" role="alert">
+                        <button type="button" class="close" data-dismiss="alert" aria-label="close">
+                           <span aria-hidden="true">x</span>
+                        </button>
+                        {{message}}
+                     </div>
+
+                     
+
+                     {%endfor%}
+                     {%endif%}
+                     {%endwith%}
                     <table class="table table-striped">
                         <tr>
                             <th>Serial</th>
@@ -30,21 +47,20 @@
                             <th>Action</th>
                         </tr>
 
+                        {% for row in product %}
                         <tr>
-                            <td>01</td>
-                            <td>YOGA MAT</td>
-                            <td>Used to do yoga</td>
-                            <td>15 euro</td>
+                            <td>{{row.0}}</td>
+                            <td>{{row.1}}</td>
+                            <td>{{row.2}}</td>
+                            <td>{{row.3}}</td>
                             <td>
                                 <a href = "#" class="btn btn-warning btn-xs" data-toggle="modal" data-target="#modaledit">Edit</a>
                                 <a href = "#" class="btn btn-danger btn-xs" onclick = "return confirm('Are you sure to delete?')">Delete</a>
                             </td>
                         </tr>
+
                         
-                    </table>
-                
-                </div>
-            </div>
+                   
 
 
             <div id="modaledit" class="modal fade" role="dialog">
@@ -136,6 +152,11 @@
              
              
              </div>
+             {% endfor %}
+            </table>
+                
+         </div>
+     </div>
 
            
              
@@ -164,7 +185,7 @@
                       <div class="modal-body">
              
              
-                         <form action="" method="POST">
+                         <form action="{{url_for('insert')}}" method="POST">
              
              
                             <div class="form-group">
@@ -235,9 +256,9 @@
         </div>
         {% endblock %}    
         <div class ="well">
-            <h3>Website:AdminPortal.com
-                <span class = "pull-right">Like Us: WWW.adminportal.com</span>
-            </h3>
+            <h5>Website:AdminPortal.com
+                <span class = "pull-right">Contact us: dbs.ie</span>
+            </h5>
         </div>
     </div>
     
