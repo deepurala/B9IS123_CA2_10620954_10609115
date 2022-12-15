@@ -33,7 +33,7 @@ def Index():
     cur.close()
     return render_template('index.html', product = data)
 
-@app.route('/delete/<string:id_data>', methods = ['POST', 'GET'])
+@app.route('/delete/<string:id_data>', methods = ['POST', 'GET', 'DELETE'])
 def delete(id_data):
 
     cur = mysql.connection.cursor()
