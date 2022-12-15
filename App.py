@@ -33,5 +33,14 @@ def Index():
     cur.close()
     return render_template('index.html', product = data)
 
+@app.route('/delete/<string:id_data>', methods = ['POST', 'GET'])
+def delete(id_data):
+
+    cur = mysql.connection.cursor()
+    cur.execute("DELETE FROM product WHERE id = %s", (id_data))
+    flash("Deleted Successfully")
+    mysql.connection.commit()
+    return redirect(url_for('Index'))
+
 if __name__ == "__main__":
     app.run(host='0.0.0.0',port=8080, debug=True)
