@@ -42,5 +42,26 @@ def delete(id_data):
     mysql.connection.commit()
     return redirect(url_for('Index'))
 
+
+@app.route('/update', methods = ['POST', 'GET', 'PUT'])
+def update():
+    if request.method == 'POST':
+        id_data = request.form['id']
+        productname = request.form['productname']
+        productdescription = request.form['productdescription']
+        productprice = request.form['productprice']
+
+        cur = mysql.connection.cursor()
+        cur.execute(""" 
+        UPDATE product
+        SET product_name =%s, product_description=%s, product_price=%s
+        WHERE id = %s 
+        """, (productname, productdescription, productprice, id_data) )
+
+        flash("Data Updated Successfully")
+        mysql.connection.commit()
+        return redirect(url_for('Index'))
+
+
 if __name__ == "__main__":
     app.run(host='0.0.0.0',port=8080, debug=True)
