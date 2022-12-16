@@ -64,5 +64,18 @@ pip install flask
 pip install flask_mysqldb
 ```
 
+## References
+1. Flask: 
+https://towardsdatascience.com/the-right-way-to-build-an-api-with-python-cd08ab285f8f
+https://webdamn.com/create-restful-api-using-python-mysql/
 
+2. Frontend: 
+https://www.codewithrandom.com/2022/08/12/ecommerce-website-using-html-css-and-javascript-simple-and-responsive-ecommerce-website/
+https://getbootstrap.com/docs/5.2/forms/overview/
 
+3. Database:
+https://youtu.be/HXV3zeQKqGY
+https://youtu.be/6L3HNyXEais
+
+4. Deployment:
+https://youtu.be/lQgsRuZXhcY
