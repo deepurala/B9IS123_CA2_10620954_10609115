@@ -76,17 +76,17 @@ I collaborated with my team mate to code a few REST API methods in python file a
 Once, we had the application ready, I moved on to the deployment part of the application where I creaded a new Azure web app in the student account of Azure portal. I did refere to a few [microsoft documentation](https://learn.microsoft.com/en-us/azure/app-service/quickstart-python?tabs=flask%2Cwindows%2Cazure-cli%2Cvscode-deploy%2Cdeploy-instructions-azportal%2Cterminal-bash%2Cdeploy-instructions-zip-azcli) on how to deploy the GitHub repos onto Azure. Here I have used a native feature of GitHub called GitHub Actions to authenticate this repository to Azure web app portal. After a few tries I was able to deploy the GitHub project onto the Azure web app.
 
 ## References
-1. Flask: 
-https://towardsdatascience.com/the-right-way-to-build-an-api-with-python-cd08ab285f8f
-https://webdamn.com/create-restful-api-using-python-mysql/
+1. Flask:
+	https://towardsdatascience.com/the-right-way-to-build-an-api-with-python-cd08ab285f8f
+	https://webdamn.com/create-restful-api-using-python-mysql/
 
-2. Frontend: 
-https://www.codewithrandom.com/2022/08/12/ecommerce-website-using-html-css-and-javascript-simple-and-responsive-ecommerce-website/
-https://getbootstrap.com/docs/5.2/forms/overview/
+2. Frontend:
+	https://www.codewithrandom.com/2022/08/12/ecommerce-website-using-html-css-and-javascript-simple-and-responsive-ecommerce-website/
+	https://getbootstrap.com/docs/5.2/forms/overview/
 
 3. Database:
-https://youtu.be/HXV3zeQKqGY
-https://youtu.be/6L3HNyXEais
+	https://youtu.be/HXV3zeQKqGY
+	https://youtu.be/6L3HNyXEais
 
 4. Deployment:
-https://youtu.be/lQgsRuZXhcY
+	https://youtu.be/lQgsRuZXhcY
