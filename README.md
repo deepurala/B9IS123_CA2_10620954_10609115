@@ -66,6 +66,15 @@ pip install flask
 pip install flask_mysqldb
 ```
 
+## Individual contribution
+
+### Devika Bolluru Thirumaleshwara (10620954)
+
+
+### Pradeep Nagendra Urala (10609115)
+I collaborated with my team mate to code a few REST API methods in python file and also understand and makes according changes in the landing page. As the landing page was already structued by my team mate, I had to work on the minor deatils of the app.py file and test these REST API functions in local WAMP server. 
+Once, we had the application ready, I moved on to the deployment part of the application where I creaded a new Azure web app in the student account of Azure portal. I did refere to a few [microsoft documentation](https://learn.microsoft.com/en-us/azure/app-service/quickstart-python?tabs=flask%2Cwindows%2Cazure-cli%2Cvscode-deploy%2Cdeploy-instructions-azportal%2Cterminal-bash%2Cdeploy-instructions-zip-azcli) on how to deploy the GitHub repos onto Azure. Here I have used a native feature of GitHub called GitHub Actions to authenticate this repository to Azure web app portal. After a few tries I was able to deploy the GitHub project onto the Azure web app.
+
 ## References
 1. Flask: 
 https://towardsdatascience.com/the-right-way-to-build-an-api-with-python-cd08ab285f8f
