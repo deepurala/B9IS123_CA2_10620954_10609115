@@ -14,10 +14,14 @@ Integrate - API (Python Flask API)
 
 Database: MySQL
 
-Participants:
-DEVIKA BOLLUR THIRUMALESHWARA (10620954)
+## Project Grop Details:
+------------------------------
+* **Group :** K
+*  **Participants :** 
 
-PRADEEP NAGENDRA URALA (10609115)
+1. PRADEEP NAGENDRA URALA (10609115)
+2. DEVIKA BOLLUR THIRUMALESHWARA (10620954)
+
 
 -------------------
 # Store Admin Portal
@@ -46,7 +50,7 @@ Overall, this web portal would provide store admins with a convenient way to man
 4. Javascript
 5. Jquery
 
-* **Server :**
+* **Local Server :**
 1. WAMPSERVER
 
 
@@ -59,14 +63,6 @@ pip install flask
 ```bash
 pip install flask_mysqldb
 ```
-
-## Project Grop Details:
-------------------------------
-* **Group :** K
-*  **Participants :** 
-
-1. PRADEEP NAGENDRA URALA (10609115)
-2. DEVIKA BOLLUR THIRUMALESHWARA (10620954)
 
 
 
