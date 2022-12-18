@@ -69,6 +69,11 @@ pip install flask_mysqldb
 ## Individual contribution
 
 ### Devika Bolluru Thirumaleshwara (10620954)
+Created the HTML files which will be used to render the frontend. Used Bootstrap and CSS to create a modern and stylish UI. Created a JavaScript file to handle the frontend logic and to validate.
+Created the database and tables for the application. 
+For the backend setup  installed the necessary packages for  Flask application.
+Connecting the application to the database.
+I worked on the READ and DELETE operations in the app.py file as part of the CRUD operation.
 
 
 ### Pradeep Nagendra Urala (10609115)
